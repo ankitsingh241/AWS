@@ -1,0 +1,32 @@
+              
+   This is our first lab to make a ec2 instance.
+    
+   We will make a Windows Server.
+
+   Step 1 : Login to your AWS Management console, go to EC2 services.
+   
+   Step 2 : Select Instances ==> Choose any Amazon Machine Image(AMI)
+            Windows or Linux
+   
+   Step 3 : Windows AMI(Free tier) ==> Type- t2 micro 
+            Create a new key pair
+	    Allow SSH, HTTP, HTTPS anywhere 0.0.0.0/0
+            click on Launch Instance.
+   
+   Step 4 : Now Instanceis launched but you have to connnect to Remote Desktop Connection(RDP).
+
+   Step 5 : Search RDP in your system and open it.
+            Copy the IPv4 Public IP from the Instance descrption and paste it.
+
+   Step 6 : Click on Connect in AWS, it will ask password.
+            Get password ==> choose file key pair ==> Decrypt password ==> Copy and paste it in RDP password.
+
+	    Now you hace successfully launched a Windows server on your local machince.
+
+
+
+
+
+
+
+
