@@ -1,0 +1,20 @@
+  
+  This is our second lab.
+
+  We will learn how to Install webserver IIS and Create Webpage on Windows Server.
+
+  First create a Windows Server in AWS.
+
+  then...
+
+  Step 1 : Go to Server Manager in Windows Server.
+
+  Step 2 : Add roles and features.
+
+  Step 3 : click Next --> server roles --> Web Server(IIS) --> Install
+
+  Step 4 : Got to folder --> local drive c --> inetpub --> wwwroot --> delete eveything
+         --> Add text file wirte anything --> save as .html 
+         --> now paste the public ip in your web browser 
+
+  You will see a webpage with the text that you have written in that html file.
