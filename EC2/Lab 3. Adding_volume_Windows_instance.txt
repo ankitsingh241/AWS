@@ -1,0 +1,49 @@
+
+    This is our third lab.
+
+    We will learn how to add volume before and after creating a Windows Server.
+
+    Adding volume before launching Windows instance.
+
+    Step 1 : EC2 --> OS or AMI - Windows --> Instance type - t2.micro
+             Key pair --> Network Setting --> Configure storage - add new volume 
+    
+    Step 2 : Free tier eligible can get up to 30 GB of EBS General Purpose (SSD) 
+             or Magnetic storage.
+
+
+    Now you have already two volume lets say 30GB of Root vol. and 20GB of EBS volume.
+    But after launching instance you want to add another voulume according to ypur requirment.
+
+
+    Adding volume after launching Windows instance.
+
+    Step 1 : Click on running instance --> Go to Volumes --> create voulme -->
+             Volume type - Size - click on Create.
+
+             Other two volumes are in use but this one will not because its not attched to server.
+    
+    Step 2 : Select new volume --> Actions --> Attach volume --> select your instance.
+             Now, In windows instance
+             Go to Server --> Server manager --> Files & Storage Services -->
+             Volumes --> Disks --> Click on new volume --> Bring online -->
+             click on it again --> New Vol. Wizard --> Next--Name--Drive E--Create.
+
+    Go to my computer, now you have three storage in your Windows server.
+    In future you can add more voulume if required.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
