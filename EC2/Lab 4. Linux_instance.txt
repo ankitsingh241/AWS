@@ -1,0 +1,20 @@
+   
+   
+   This is fourth first lab.
+    
+   We will create a Linux machine in AWS.
+
+   Step 1 : Login to your AWS Management console, go to EC2 services.
+   
+   Step 2 : Select Instances --> Choose any Amazon Machine Image(AMI)
+            Linux
+   
+   Step 3 : Linux AMI(Free tier) --> Type- t2 micro 
+            Create a new key pair
+	    Allow SSH, HTTP, HTTPS anywhere 0.0.0.0/0
+            click on Launch Instance.
+   
+   Step 4 : Now Instance is launched but you have to connnect.
+            Connect --> EC2 Instance Connect --> connect
+
+    	    Now you hace successfully launched a linux machine on your system.

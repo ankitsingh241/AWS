@@ -13,7 +13,7 @@
 	    Allow SSH, HTTP, HTTPS anywhere 0.0.0.0/0
             click on Launch Instance.
    
-   Step 4 : Now Instanceis launched but you have to connnect to Remote Desktop Connection(RDP).
+   Step 4 : Now Instance is launched but you have to connnect to Remote Desktop Connection(RDP).
 
    Step 5 : Search RDP in your system and open it.
             Copy the IPv4 Public IP from the Instance descrption and paste it.
