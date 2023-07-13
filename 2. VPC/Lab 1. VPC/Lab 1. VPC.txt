@@ -1,0 +1,62 @@
+              
+   This is our first lab.
+    
+   We will create a Virtual Private Cloud(VPC) in AWS.
+
+   Login to your AWS Management console, go to VPC.
+
+   To create and run successfully a VPC we need to follow these process:
+
+   1. VPC
+   2. Subnet
+   3. Internet Gateway
+   4. Routing table
+
+   
+   Step 1 : VPC
+            
+            Create VPC --> VPC only --> Name(myVPC)
+            -->IPv4 CIDR 10.0.0.0/16
+   
+   Step 2 : SUBNET
+
+            Create subnet --> VPC ID(Select your VPC(myVPC)) 
+            --> Name(mySubnet) --> Availability Zone(AZ) select any
+            --> IPv4 CIDR 10.0.0.0/24
+
+   Step 3 : INTERNET GATEWAY
+
+            Create internet gateway --> Name(myIGW)
+            Now the status will be detached, to attach it.
+            Click on it --> Actions --> Attach to VPC
+            Select your VPC and attach.
+
+   Step 4 : ROUTE TABLE
+
+            If you go to Route tables there is already a route table created with your VPC.
+
+            Click on it --> Subnet Associations --> Edit subnet associations
+            --> select your VPC --> Save
+
+            Routes --> Edit --> Add route --> 0.0.0.0/0 --> Internet Gateway --> Save
+
+   Now you have created a VPC,  ow check if it works or not.
+   To check it wheather its working or not we need to make a instance and run it.
+   We will create a Windows Instance.
+    
+   Step 5 : Name(VPC Testing) --> Windows AMI --> t2.micro --> New key pair
+            --> Edit Network Settings --> Select your created VPC insted of default one
+            --> SUbnet is auto selected --> Auto-assign public IP ENABLE
+            --> New Security group --> rdp-anywhere --> Launch
+  
+ Connect to Server using RDP
+ Ping test will show if its connected to internet or not.
+        
+
+
+
+
+
+
+
+
