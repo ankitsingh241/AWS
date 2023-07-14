@@ -1,0 +1,81 @@
+              
+   This is our Second lab.
+    
+   We will see how a NAT Gateway works in AWS.
+
+   First we have to create a VPC and in that two subnets one Privet and one Public.
+   We will create EC2 in both subnets.
+   Only Public instance will be connected to Internet gateway not Privet.
+   
+   Login to your AWS Management console, go to VPC.
+
+   
+   Step 1 : VPC
+            
+            Create VPC --> VPC only --> Name(vpc1)
+            -->IPv4 CIDR 10.0.0.0/16
+   
+   Step 2 : SUBNET
+
+            Now we will create two subnets for this vpc.
+            I). Public Subnet
+            II).Private Subnet
+
+            Create subnet --> VPC ID(Select your VPC(vpc1)) 
+            --> Name(Public/Private) --> Availability Zone(AZ) select any
+            --> IPv4 CIDR 10.0.0.0/24(Public) - 10.0.1.0/24(Private)
+
+   Step 3 : INTERNET GATEWAY
+
+            Create internet gateway --> Name(IGW1)
+            Now the status will be detached, to attach it.
+            Click on it --> Actions --> Attach to VPC
+            Select your VPC and attach.
+
+   Step 4 : ROUTE TABLE
+
+            Create two route table one for pulic and one for private.
+
+            Click on it --> Subnet Associations --> Edit subnet associations
+            --> select your subnet --> Save
+
+            Do it for both, add public route with public subnet and
+            add private route with private subnet.
+
+            For Public : Routes --> Edit --> Add route --> 0.0.0.0/0 --> Internet Gateway --> Save
+
+            
+   We will create two Windows Instance for two subnets.
+    
+   Step 5 : Name --> Windows AMI --> t2.micro --> New key pair
+            --> Edit Network Settings --> Select your created VPC insted of default one
+            --> Select subnet(Public/Private) --> Auto-assign public IP ENABLE for public and DISABLE for private 
+            --> rdp-anywhere; http-anywhere; https-anywhere --> Launch
+  
+   Connect to Server using RDP.
+
+   Now in that Windows instance go to Remote Desktop Connection.
+   Paste the Private IP from Private instance.
+   User name - Administrator
+   Passowrd - Decrypted password
+   
+   Now a Private instance has been looged in to a Public Instance.
+   Since Private instance has no access to internet but Public instance has 
+   and through VPC both can be connected or talk to each other.
+
+   Now, go to CMD and ping 8.8.8.8 but you will see request timed out.
+
+   Go to VPC again again and create a NAT Gateway and select Public Subnet.
+
+   Now go again to Private route table edit route and add 0.0.0.0/0 NAT gateway.
+   Private Routes --> Edit --> Add route --> 0.0.0.0/0 --> NAT Gateway --> Save
+
+   Once NAT Gateway active you will get reply in ping test and that will show Private instance is connected to internet.
+
+   So again, function of NAT gateway: When two subnet is created in a VPC one has internet access(public)
+                                      and other(private) has not, NAT let these two subnets talk to each other 
+                                      or NAT helps private subnet to get connected with internet through public subnet.                                    
+                                    
+
+
+
