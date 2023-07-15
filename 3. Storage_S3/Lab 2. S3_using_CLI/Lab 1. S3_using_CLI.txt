@@ -1,0 +1,49 @@
+              
+   This is our Second lab.
+    
+   We will create, upload, sync file and delete a S3 bucket using CLI.
+
+   Login to your AWS Management console, go to Storage S3.
+
+   Step 1: Install AWS CLI --> CMD --> aws configure
+           it will ask Access key Id and Secret access key.
+           Download these key from Security credentials in AWS console.
+   
+   Step 2: Access key --> Secret access key --> Default region (no need to change)
+           Default output format (none)
+
+   Step 3: Now to make a bucket run the following command
+           
+           aws s3 mb s3://ankitbucket01 (mb = make bucket)
+
+   Step 4: Since your bucket has been created upload some file, to upload follow
+           First cd into that file then use command
+
+           aws s3 sync . s3://ankitbucket01 (here dot represents desktop)
+
+   Step 5: Suppose you have deleted a file from your local but that file is in bucket,
+           to sync the file from bucket to local use command
+
+           aws s3 sync s3://ankitbucket01 .
+
+   Step 6: Now if you dont have any use of the bucket you can delete by using command
+
+           for empty bucket
+           
+           aws s3 rb s3://ankitbucket01
+
+           But if the bucket has some object then use
+           
+           aws s3 rb s3://ankitbucket01 --force
+
+   
+   This is how we can make and delete a bucket using CLI.
+
+
+
+
+
+
+
+
+           

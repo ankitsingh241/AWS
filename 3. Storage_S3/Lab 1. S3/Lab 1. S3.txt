@@ -1,0 +1,35 @@
+              
+   This is our first lab of Storage.
+    
+   We will create a Simple Storage Service (S3) bucket in AWS.
+
+   Login to your AWS Management console, go to Storage S3.
+
+   
+   Step 1 : Write a unique name, select ACL enable and create.
+   
+   Step 2 : Now lets upload some files in it.
+            Upload --> Add files --> upload
+
+   Step 3 : Select object --> Open --> it will open the file in a new tab.
+            
+   Step 4 : Now copy object URL and paste it in new tab access will be denied.
+            
+            If you go to Permissions you will see only owner has Read and Write access.
+            
+            But if you want to read only access to public, then
+
+            Permission --> unselect block all public access --> confirm
+            
+            select the object --> Actions --> make public using ACL --> make public
+ 
+            Now copy object URL and paste it in new tab and it will show you the content of the file.
+            
+   Step 5 : To delete the bucket first you have to make it empty then delete.
+  
+        
+
+   You have created a S3 bucket and uploaded file and made it public successfully.
+
+
+
