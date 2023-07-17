@@ -1,0 +1,50 @@
+              
+   This is our third lab of Storage.
+    
+   We will learn how to Versioning of buckets in AWS.
+
+   Login to your AWS Management console, go to Storage S3.
+
+   
+   Step 1 : Write a unique name, select ACL enable and create.
+   
+   Step 2 : Now lets upload some files in it.
+            Upload --> Add files --> upload
+
+   Step 3 : Select object --> Open --> it will open the file in a new tab.
+            
+   Step 4 : Now copy object URL and paste it in new tab access will be denied.
+            
+            If you go to Permissions you will see only owner has Read and Write access.
+            
+            But if you want to read only access to public, then
+
+            Permission --> unselect block all public access --> confirm
+            
+            select the object --> Actions --> make public using ACL --> make public
+ 
+            Now copy object URL and paste it in new tab and it will show you the content of the file.
+            
+   Step 5 : Now go to bucket --> Peoperties --> Edit Bucket Versioning Enable.
+
+   Step 6 : Update the uploaded file in your local and upload it again.
+
+   Step 7 : Click on the Object and go to Versions yo will see two files one former and other updated one.
+            Refer image Version1.
+
+  
+   Suppose someone has deleted the object in your bucket.
+           
+             How will you retrieve it ? 
+   
+   Step 8 : After deletion into the bucket you will see SHOW VERSION button click on it.
+            It will show both updated and former files.
+
+   Step 9 : Select the file which shows delete marker and delete it again.
+            It will be restored in the bucket.
+           
+
+   You have created a S3 bucket, uploaded file and made it public at the same time you enable versioning so it can be restored even after deletion.
+
+
+
