@@ -1,0 +1,38 @@
+              
+   This is our first lab of Elastic Block Store.
+    
+   We will learn how to create a Amazon Machine Image from EC2 and use it to make another EC2 in different Region in AWS.
+
+   Login to your AWS Management console, go to EC2.
+
+   
+   Step 1 : Create a Windows Webserver and make some random file in it.
+   
+   Step 2 : Click on Windows instance --> Actions --> Image --> create Image
+            Image name --> Description --> create image.
+
+   Step 3 : Go to AMIs, you will see a Image has created.
+            Now go to instance and delete the windows instance.
+
+   Step 4 : Now go to AMI --> Actions --> copy AMI
+            Destination region(choose any) Tokyo --> Copy AMI.
+            
+
+   Step 5 : Change the region and you will see a image in that AMIs.
+
+   Step 6 : We will create a instance with the help of this image in this region.
+            Once image is available we will make a instance.
+
+   Step 7 : Click on the AMI --> Launch instance from AMI
+            Same process to launch instance and launch.
+   
+   Step 8 : Connect --> but during connections if rdp ask for password enter the old one
+            which has been used before making image.
+ 
+   Step 9 : Once server connected you will see the random files that you have created will be as it is.
+           
+
+   Till now you have created an instance in different region using image of another instance in another region.
+
+
+

@@ -13,7 +13,7 @@
 
 
     Now you have already two volume lets say 30GB of Root vol. and 20GB of EBS volume.
-    But after launching instance you want to add another voulume according to ypur requirment.
+    But after launching instance you want to add another voulume according to your requirment.
 
 
     Adding volume after launching Windows instance.
