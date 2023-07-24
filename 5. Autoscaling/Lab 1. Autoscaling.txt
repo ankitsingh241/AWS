@@ -1,0 +1,35 @@
+              
+   This is our first lab of Autoscaling.
+    
+   We will learn how to create a Auto Scaling Group in AWS.
+
+   Login to your AWS Management console, go to EC2.
+
+   
+   Step 1 : Click on Launch Templates --> launch a windows instance.
+
+   Step 2 : Go to Auto Scaling Groups --> Name --> Select your template --> Next
+            Select all subnets --> next --> No load balancer --> next -->
+            min or max as you like --> next --> review --> launch.
+
+   Step 3 : Go to EC2 Instance we will see running instance created by Autoscaling group.
+           
+   Step 4 : Now click on the ASG and go to Automatic scaling 
+            There is three type of Automatic Scaling policy : 
+                                                             
+            1.Dynamic scaling policy
+            2.Predeictive scaling policy 
+            3.Scheduled actions
+         
+   Step 5 : We will use Dynamic scaling policy to scale up the server of a given website. 
+            There are three type of policy in dynamic : Simple scaling
+                                                        Step scaling
+                                                        Target tracking
+                                                         
+   Step 6 : We will learn how to use Target tracking scaling.
+            Dynamic scaling --> Target tracking --> Average CPU utilization --> target value (60%)
+  
+   Step 7 : Once your CPU utilization will go above 60% ASG will create a new instance to as per requirment.
+ 
+   
+
