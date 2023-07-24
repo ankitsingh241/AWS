@@ -1,0 +1,26 @@
+              
+   This is our first lab of Loadbalancer(LB).
+    
+   We will learn how to create a loadbalancer in AWS.
+
+   Login to your AWS Management console, go to EC2.
+
+   
+   Step 1 : Click on Launch Templates --> launch a windows instance.
+
+   Step 2 : Go to Auto Scaling Groups --> Name --> Select your template --> Next
+            Select all subnets --> next --> Attatch a new load balancer(...) --> next -->
+            min or max as you like --> next --> review --> launch.
+
+   Step 3 : Attach a new load balancer --> Application --> name --> Internet facing
+            --> create a target group --> next.
+           
+   Step 4 : Now you will see one LB and one Target group has been created.
+         
+   
+
+
+
+ 
+   
+
