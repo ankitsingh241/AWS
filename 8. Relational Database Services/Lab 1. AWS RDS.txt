@@ -1,0 +1,42 @@
+              
+   This is our first lab of Relational Database Services(RDS).
+    
+   We will learn how to create a Database in AWS.
+
+   Login to your AWS Management console, go to RDS.
+
+   
+   Step 1 : create database --> Standard create
+            Engine --> MySQL
+            Templates --> Free tier
+            Settings --> Password
+            Instance config --> db.t2.micro
+            Storage --> General Purpose SSD --> Disable autoscaling
+            Connectivity --> Default --> Public access YES --> Create new security group
+            Additional config --> name --> disbale backup
+            Create database.
+
+   Step 2 : Security groups --> Edit inbound rule --> add rule -->
+            RDP, HTTP, HTTPS --> source ANYWHERE --> Save
+   
+   Step 3 : Create a linux instance --> select the same security group as RDS has.
+           
+   Step 4 : Once connected to putty login as ec2-user.
+             
+            Run these commands
+            
+            sudo su -
+            yum install -y MySQL
+            mysql -h endpoint_url -u admin -p db1(database name)
+            password - db password
+
+            Now you have connected to mysql so upload your data into database as much as possible.
+
+         
+   
+
+
+
+ 
+   
+
