@@ -3,7 +3,7 @@
     
    We will learn how to create a Database in AWS.
 
-   Login to your AWS Management console, go to RDS.
+   Login to your AWS Management console, go to Database --> RDS.
 
    
    Step 1 : create database --> Standard create

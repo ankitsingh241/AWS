@@ -1,0 +1,25 @@
+              
+   This is our first lab of DynamoDB.
+    
+   We will learn how to create a Database in AWS.
+
+   Login to your AWS Management console, go to Database --> DynamoDB.
+
+   
+   Step 1 : Create table
+            Table details --> Table name --> Partition key and type
+            Table Settings --> Default
+            Create table.
+
+   Step 2 : Explore items --> create item --> add data.
+   
+   Step 3 : You can add json file as well to add item.
+
+   Step 4 : You can generate query and quick search for a desired data.
+
+   
+   DynamoDB will create a database or table according to your data in which you can query your desired data.
+   
+
+
+

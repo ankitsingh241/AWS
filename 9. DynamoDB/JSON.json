@@ -1,0 +1,9 @@
+{ 
+    "roll no." : {"N" : "3"},
+    "year" : {"N" : "2010"},
+    "title" : {"S" : "AWS Fundamental"},
+    "writer" : {"S" : "Ankit Singh"}, 
+    "release date" : {"S" : "10-10-2010"},
+    "ratings" : {"N" : "7"}
+}
+
