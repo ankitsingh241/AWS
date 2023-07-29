@@ -1,0 +1,38 @@
+              
+   This is our first lab of Lambda.
+    
+   We will learn how to work with Lambda in AWS.
+
+   We will write a code in lambda that whenever anything will be uploaded
+   in S3 it will create the items in the DynamoDB table or details of that file.
+   
+   First we will create a IAM role for that.
+      
+   Step 1 : IAM --> Roles --> Create --> AWS service
+            Common use cases Lambda --> Add permission
+            DynamoDB full access --> role name --> create role.
+
+   Step 2 : Now create a Lambda function.
+            Go to Lambda --> create function --> Author from scratch
+            name --> language --> change default execution role --> use a existing role
+            select the role that you have created in IAM --> create function.
+   
+   Step 3 : Write the code that whenever anything will be uploaded
+            in S3 it will create the items in DynamoDB table or details of that file.
+            
+            Deploy.
+
+   Step 4 : Before adding Trigger we have to make a bucket in S3.
+
+   Step 5 : Add trigger --> S3 --> select bucket --> Add.
+
+   Step 6 : Create a DynamoDB table which is empty.
+
+   Step 7 : Now upload a file in S3 bucket and you will see the details
+            of the files will be added in the table of DynamoDB as items.
+   
+
+   This is how using Lambda we will automate things in AWS.   
+
+
+
